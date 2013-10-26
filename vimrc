@@ -1,6 +1,10 @@
 call pathogen#runtime_append_all_bundles()
-filetype off
+call pathogen#helptags()
+
 syntax on
-filetype plugin indent on
 
 colorscheme evening
+
+if has("autocmd")
+	filetype plugin indent on
+endif
