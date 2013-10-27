@@ -1,6 +1,8 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+filetype plugin indent on
+
 "some basic stuff"
 syntax on
 colorscheme evening
@@ -10,13 +12,17 @@ set splitright
 set splitbelow
 
 "filenames autocompletion"
-set wildmenu=longest,list,full
 set wildmenu
+set wildmode=longest,list,full
 
 "nerd tree'
 command Nt NERDTreeToggle
 
-"pathogen"
-if has("autocmd")
-	filetype plugin indent on
-endif
+set list
+set listchars=eol:$,tab:>.,trail:.,extends:>,precedes:<
+
+
+"pathogen
+"if has("autocmd")
+"	filetype plugin indent on
+"endif
