@@ -5,10 +5,13 @@ call pathogen#helptags()
 syntax on
 colorscheme evening
 set number
+set autoread
+set splitright
+set splitbelow
 
 "filenames autocompletion"
+set wildmenu=longest,list,full
 set wildmenu
-set wildmenu=longest,list
 
 "nerd tree'
 command Nt NERDTreeToggle
