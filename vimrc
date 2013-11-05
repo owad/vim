@@ -7,6 +7,10 @@ filetype plugin indent on
 syntax on
 colorscheme evening
 
+set cursorline
+hi clear CursorLine
+hi CursorLine gui=underline
+
 set number
 set autoread
 set splitright
