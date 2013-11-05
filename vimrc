@@ -6,6 +6,7 @@ filetype plugin indent on
 "some basic stuff"
 syntax on
 colorscheme evening
+
 set number
 set autoread
 set splitright
@@ -20,9 +21,3 @@ command Nt NERDTreeToggle
 
 set list
 set listchars=eol:$,tab:>.,trail:.,extends:>,precedes:<
-
-
-"pathogen
-"if has("autocmd")
-"	filetype plugin indent on
-"endif
